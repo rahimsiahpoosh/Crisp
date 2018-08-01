@@ -1,0 +1,556 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1906EFBC204FDE250041EFBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1906EFBB204FDE250041EFBC /* AppDelegate.swift */; };
+		1906EFBE204FDE250041EFBC /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1906EFBD204FDE250041EFBC /* LoginVC.swift */; };
+		1906EFC1204FDE250041EFBC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1906EFBF204FDE250041EFBC /* Main.storyboard */; };
+		1906EFC3204FDE250041EFBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1906EFC2204FDE250041EFBC /* Assets.xcassets */; };
+		1906EFC6204FDE250041EFBC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1906EFC4204FDE250041EFBC /* LaunchScreen.storyboard */; };
+		1906EFD1204FE3D50041EFBC /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1906EFD0204FE3D50041EFBC /* CreateAccountVC.swift */; };
+		1906EFD3204FE4530041EFBC /* ProductsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1906EFD2204FE4530041EFBC /* ProductsVC.swift */; };
+		191A0FD7207CCA0B00736935 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191A0FD6207CCA0B00736935 /* Order.swift */; };
+		191A5E8920B2CDA60093E440 /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191A5E8820B2CDA60093E440 /* TextView.swift */; };
+		192714DF20AEF626003E86B6 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192714DE20AEF626003E86B6 /* Category.swift */; };
+		193082092090AFA60077474A /* OrderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 193082082090AFA60077474A /* OrderService.swift */; };
+		1930820B209358C00077474A /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1930820A209358C00077474A /* Customer.swift */; };
+		194879B02055BF2B00F5FEB2 /* ConfirmVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194879AF2055BF2B00F5FEB2 /* ConfirmVC.swift */; };
+		194879D32056B06800F5FEB2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 194879D22056B06800F5FEB2 /* GoogleService-Info.plist */; };
+		194884BB2052B96100B0082C /* DropDateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194884BA2052B96100B0082C /* DropDateVC.swift */; };
+		194884BD2052BB0000B0082C /* DropTimeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194884BC2052BB0000B0082C /* DropTimeVC.swift */; };
+		195C856E204FEC5C00ACE7F6 /* ButtonRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195C856D204FEC5C00ACE7F6 /* ButtonRadius.swift */; };
+		195C8570204FEF7800ACE7F6 /* BackButtonCircled.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195C856F204FEF7800ACE7F6 /* BackButtonCircled.swift */; };
+		195C8572204FF30700ACE7F6 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195C8571204FF30700ACE7F6 /* TextField.swift */; };
+		195C857420500D9500ACE7F6 /* ManPopUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195C857320500D9500ACE7F6 /* ManPopUpVC.swift */; };
+		195C8576205015FA00ACE7F6 /* PopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195C8575205015FA00ACE7F6 /* PopupView.swift */; };
+		19690A1A207E9070004ED59A /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19690A19207E9070004ED59A /* Item.swift */; };
+		19C603702080961600A2B3F3 /* TimeAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C6036F2080961600A2B3F3 /* TimeAddress.swift */; };
+		19E395DC2051385E00494AC8 /* WomanPopUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E395DB2051385E00494AC8 /* WomanPopUpVC.swift */; };
+		19E395DE20513BCC00494AC8 /* HomePopUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E395DD20513BCC00494AC8 /* HomePopUpVC.swift */; };
+		19E395E02051431E00494AC8 /* DropPickVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E395DF2051431E00494AC8 /* DropPickVC.swift */; };
+		19E395E220515A4C00494AC8 /* PickUpDateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E395E120515A4C00494AC8 /* PickUpDateVC.swift */; };
+		19E395E42051688E00494AC8 /* PickUpTimeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E395E32051688E00494AC8 /* PickUpTimeVC.swift */; };
+		56AC834482890D2D7F13722A /* Pods_Crisp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80388FA6FA21D396A35B8C76 /* Pods_Crisp.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1906EFB8204FDE250041EFBC /* Crisp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Crisp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1906EFBB204FDE250041EFBC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1906EFBD204FDE250041EFBC /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		1906EFC0204FDE250041EFBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1906EFC2204FDE250041EFBC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1906EFC5204FDE250041EFBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1906EFC7204FDE250041EFBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1906EFD0204FE3D50041EFBC /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
+		1906EFD2204FE4530041EFBC /* ProductsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsVC.swift; sourceTree = "<group>"; };
+		191A0FD6207CCA0B00736935 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		191A5E8820B2CDA60093E440 /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
+		192714DE20AEF626003E86B6 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		193082082090AFA60077474A /* OrderService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderService.swift; sourceTree = "<group>"; };
+		1930820A209358C00077474A /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
+		194879AF2055BF2B00F5FEB2 /* ConfirmVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmVC.swift; sourceTree = "<group>"; };
+		194879D22056B06800F5FEB2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		194884BA2052B96100B0082C /* DropDateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDateVC.swift; sourceTree = "<group>"; };
+		194884BC2052BB0000B0082C /* DropTimeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropTimeVC.swift; sourceTree = "<group>"; };
+		195C856D204FEC5C00ACE7F6 /* ButtonRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonRadius.swift; sourceTree = "<group>"; };
+		195C856F204FEF7800ACE7F6 /* BackButtonCircled.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButtonCircled.swift; sourceTree = "<group>"; };
+		195C8571204FF30700ACE7F6 /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
+		195C857320500D9500ACE7F6 /* ManPopUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManPopUpVC.swift; sourceTree = "<group>"; };
+		195C8575205015FA00ACE7F6 /* PopupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupView.swift; sourceTree = "<group>"; };
+		19690A19207E9070004ED59A /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		19C6036F2080961600A2B3F3 /* TimeAddress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeAddress.swift; sourceTree = "<group>"; };
+		19E395DB2051385E00494AC8 /* WomanPopUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WomanPopUpVC.swift; sourceTree = "<group>"; };
+		19E395DD20513BCC00494AC8 /* HomePopUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePopUpVC.swift; sourceTree = "<group>"; };
+		19E395DF2051431E00494AC8 /* DropPickVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropPickVC.swift; sourceTree = "<group>"; };
+		19E395E120515A4C00494AC8 /* PickUpDateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickUpDateVC.swift; sourceTree = "<group>"; };
+		19E395E32051688E00494AC8 /* PickUpTimeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickUpTimeVC.swift; sourceTree = "<group>"; };
+		80388FA6FA21D396A35B8C76 /* Pods_Crisp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Crisp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		982332CD4D4EAEA457A9B767 /* Pods-Crisp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Crisp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Crisp/Pods-Crisp.debug.xcconfig"; sourceTree = "<group>"; };
+		C6C79B37377E18CE48B2EBC1 /* Pods-Crisp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Crisp.release.xcconfig"; path = "Pods/Target Support Files/Pods-Crisp/Pods-Crisp.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1906EFB5204FDE250041EFBC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56AC834482890D2D7F13722A /* Pods_Crisp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1906EFAF204FDE250041EFBC = {
+			isa = PBXGroup;
+			children = (
+				1906EFBA204FDE250041EFBC /* Crisp */,
+				1906EFB9204FDE250041EFBC /* Products */,
+				36A1A64E49ED0BFB60EA304B /* Pods */,
+				3610BB1106D2362EEF37EEE1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1906EFB9204FDE250041EFBC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1906EFB8204FDE250041EFBC /* Crisp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1906EFBA204FDE250041EFBC /* Crisp */ = {
+			isa = PBXGroup;
+			children = (
+				193082072090AF760077474A /* Services */,
+				19071C6F2076402F00D7AC0E /* Storyboard */,
+				19071C72207640D600D7AC0E /* Model */,
+				1906EFCD204FE3830041EFBC /* Views */,
+				1906EFCE204FE3930041EFBC /* Controllers */,
+				1906EFBB204FDE250041EFBC /* AppDelegate.swift */,
+				1906EFC2204FDE250041EFBC /* Assets.xcassets */,
+				1906EFC7204FDE250041EFBC /* Info.plist */,
+				194879D22056B06800F5FEB2 /* GoogleService-Info.plist */,
+			);
+			path = Crisp;
+			sourceTree = "<group>";
+		};
+		1906EFCD204FE3830041EFBC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				195C856D204FEC5C00ACE7F6 /* ButtonRadius.swift */,
+				195C856F204FEF7800ACE7F6 /* BackButtonCircled.swift */,
+				195C8571204FF30700ACE7F6 /* TextField.swift */,
+				195C8575205015FA00ACE7F6 /* PopupView.swift */,
+				191A5E8820B2CDA60093E440 /* TextView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1906EFCE204FE3930041EFBC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1906EFBD204FDE250041EFBC /* LoginVC.swift */,
+				1906EFD0204FE3D50041EFBC /* CreateAccountVC.swift */,
+				1906EFD2204FE4530041EFBC /* ProductsVC.swift */,
+				195C857320500D9500ACE7F6 /* ManPopUpVC.swift */,
+				19E395DB2051385E00494AC8 /* WomanPopUpVC.swift */,
+				19E395DD20513BCC00494AC8 /* HomePopUpVC.swift */,
+				19E395DF2051431E00494AC8 /* DropPickVC.swift */,
+				19E395E120515A4C00494AC8 /* PickUpDateVC.swift */,
+				19E395E32051688E00494AC8 /* PickUpTimeVC.swift */,
+				194884BA2052B96100B0082C /* DropDateVC.swift */,
+				194884BC2052BB0000B0082C /* DropTimeVC.swift */,
+				194879AF2055BF2B00F5FEB2 /* ConfirmVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		19071C6F2076402F00D7AC0E /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				1906EFC4204FDE250041EFBC /* LaunchScreen.storyboard */,
+				1906EFBF204FDE250041EFBC /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		19071C72207640D600D7AC0E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1930820A209358C00077474A /* Customer.swift */,
+				191A0FD6207CCA0B00736935 /* Order.swift */,
+				19690A19207E9070004ED59A /* Item.swift */,
+				19C6036F2080961600A2B3F3 /* TimeAddress.swift */,
+				192714DE20AEF626003E86B6 /* Category.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		193082072090AF760077474A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				193082082090AFA60077474A /* OrderService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		3610BB1106D2362EEF37EEE1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				80388FA6FA21D396A35B8C76 /* Pods_Crisp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		36A1A64E49ED0BFB60EA304B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				982332CD4D4EAEA457A9B767 /* Pods-Crisp.debug.xcconfig */,
+				C6C79B37377E18CE48B2EBC1 /* Pods-Crisp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1906EFB7204FDE250041EFBC /* Crisp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1906EFCA204FDE250041EFBC /* Build configuration list for PBXNativeTarget "Crisp" */;
+			buildPhases = (
+				56E336022EB55244E3E5307B /* [CP] Check Pods Manifest.lock */,
+				1906EFB4204FDE250041EFBC /* Sources */,
+				1906EFB5204FDE250041EFBC /* Frameworks */,
+				1906EFB6204FDE250041EFBC /* Resources */,
+				AE857DCB85C56300B885A178 /* [CP] Embed Pods Frameworks */,
+				CA686DFD799D299ED972EFAD /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Crisp;
+			productName = Crisp;
+			productReference = 1906EFB8204FDE250041EFBC /* Crisp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1906EFB0204FDE250041EFBC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Rahim Siahpoosh";
+				TargetAttributes = {
+					1906EFB7204FDE250041EFBC = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 1906EFB3204FDE250041EFBC /* Build configuration list for PBXProject "Crisp" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1906EFAF204FDE250041EFBC;
+			productRefGroup = 1906EFB9204FDE250041EFBC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1906EFB7204FDE250041EFBC /* Crisp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1906EFB6204FDE250041EFBC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1906EFC6204FDE250041EFBC /* LaunchScreen.storyboard in Resources */,
+				194879D32056B06800F5FEB2 /* GoogleService-Info.plist in Resources */,
+				1906EFC3204FDE250041EFBC /* Assets.xcassets in Resources */,
+				1906EFC1204FDE250041EFBC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		56E336022EB55244E3E5307B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Crisp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AE857DCB85C56300B885A178 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Crisp/Pods-Crisp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/DLRadioButton/DLRadioButton.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/SimplePDF/SimplePDF.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DLRadioButton.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SimplePDF.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Crisp/Pods-Crisp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CA686DFD799D299ED972EFAD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Crisp/Pods-Crisp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1906EFB4204FDE250041EFBC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19C603702080961600A2B3F3 /* TimeAddress.swift in Sources */,
+				19E395E02051431E00494AC8 /* DropPickVC.swift in Sources */,
+				194884BB2052B96100B0082C /* DropDateVC.swift in Sources */,
+				194879B02055BF2B00F5FEB2 /* ConfirmVC.swift in Sources */,
+				19E395E42051688E00494AC8 /* PickUpTimeVC.swift in Sources */,
+				195C8576205015FA00ACE7F6 /* PopupView.swift in Sources */,
+				191A0FD7207CCA0B00736935 /* Order.swift in Sources */,
+				1930820B209358C00077474A /* Customer.swift in Sources */,
+				1906EFD3204FE4530041EFBC /* ProductsVC.swift in Sources */,
+				191A5E8920B2CDA60093E440 /* TextView.swift in Sources */,
+				193082092090AFA60077474A /* OrderService.swift in Sources */,
+				1906EFBE204FDE250041EFBC /* LoginVC.swift in Sources */,
+				1906EFBC204FDE250041EFBC /* AppDelegate.swift in Sources */,
+				19E395DC2051385E00494AC8 /* WomanPopUpVC.swift in Sources */,
+				194884BD2052BB0000B0082C /* DropTimeVC.swift in Sources */,
+				192714DF20AEF626003E86B6 /* Category.swift in Sources */,
+				19E395E220515A4C00494AC8 /* PickUpDateVC.swift in Sources */,
+				195C8572204FF30700ACE7F6 /* TextField.swift in Sources */,
+				195C857420500D9500ACE7F6 /* ManPopUpVC.swift in Sources */,
+				1906EFD1204FE3D50041EFBC /* CreateAccountVC.swift in Sources */,
+				19690A1A207E9070004ED59A /* Item.swift in Sources */,
+				195C856E204FEC5C00ACE7F6 /* ButtonRadius.swift in Sources */,
+				195C8570204FEF7800ACE7F6 /* BackButtonCircled.swift in Sources */,
+				19E395DE20513BCC00494AC8 /* HomePopUpVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1906EFBF204FDE250041EFBC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1906EFC0204FDE250041EFBC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1906EFC4204FDE250041EFBC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1906EFC5204FDE250041EFBC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1906EFC8204FDE250041EFBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1906EFC9204FDE250041EFBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1906EFCB204FDE250041EFBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 982332CD4D4EAEA457A9B767 /* Pods-Crisp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D54V89KX3K;
+				INFOPLIST_FILE = Crisp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Rahim.Siahpoosh.Crisp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1906EFCC204FDE250041EFBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6C79B37377E18CE48B2EBC1 /* Pods-Crisp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D54V89KX3K;
+				INFOPLIST_FILE = Crisp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Rahim.Siahpoosh.Crisp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1906EFB3204FDE250041EFBC /* Build configuration list for PBXProject "Crisp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1906EFC8204FDE250041EFBC /* Debug */,
+				1906EFC9204FDE250041EFBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1906EFCA204FDE250041EFBC /* Build configuration list for PBXNativeTarget "Crisp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1906EFCB204FDE250041EFBC /* Debug */,
+				1906EFCC204FDE250041EFBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1906EFB0204FDE250041EFBC /* Project object */;
+}
